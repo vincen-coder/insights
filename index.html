@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%230a0a0a%22 stroke=%22%23222%22 stroke-width=%224%22/><circle cx=%2250%22 cy=%2232%22 r=%2212%22 fill=%22%2322c55e%22/><rect x=%2238%22 y=%2252%22 width=%2224%22 height=%2232%22 rx=%226%22 fill=%22white%22/></svg>">
+</head>
+<body class="bg-[#050505] text-white">
+
+    <nav class="fixed top-0 w-full bg-[#050505]/80 backdrop-blur-md border-b border-white/5 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">Insights<span class="text-blue-500">.</span></a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="career.html" class="hover:text-white transition">Roadmaps</a>
+                <a href="stories.html" class="px-4 py-2 rounded-full border border-white/10 hover:bg-white/5 hover:text-white transition">Stories</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] -z-10 opacity-50"></div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-[1.1]">
+            Build Your Tech Career <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Without The Guesswork.</span>
+        </h1>
+        <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+            Stop scrolling endlessly. Get proven roadmaps, read real stories from African devs, and find your path from Zero to Senior Engineer.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="career.html" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-blue-500/25">
+                Start Learning
+            </a>
+            <a href="stories.html" class="bg-[#1a1a1a] hover:bg-[#252525] border border-white/10 text-white px-8 py-4 rounded-xl font-bold transition">
+                Read Success Stories
+            </a>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center text-blue-400 mb-6 text-2xl">🗺️</div>
+                <h3 class="text-xl font-bold mb-3">Clear Roadmaps</h3>
+                <p class="text-gray-400">Step-by-step guides for Frontend, Backend, and DevOps. Know exactly what to learn next.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-400 mb-6 text-2xl">🚀</div>
+                <h3 class="text-xl font-bold mb-3">Real Stories</h3>
+                <p class="text-gray-400">Interviews with Nigerian and global devs who started with nothing and made it big.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition duration-300">
+                <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center text-green-400 mb-6 text-2xl">💡</div>
+                <h3 class="text-xl font-bold mb-3">Free Resources</h3>
+                <p class="text-gray-400">Curated tools, videos, and articles to help you master React, Tailwind, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-10">Common Questions</h2>
+        <div class="space-y-4">
+            <details class="group bg-[#111] border border-white/5 rounded-xl overflow-hidden transition-all duration-300 open:border-blue-500/30">
+                <summary class="flex justify-between items-center p-6 cursor-pointer font-medium hover:text-blue-400 transition">
+                    Do I need a Computer Science degree?
+                    <span class="transform group-open:rotate-180 transition text-gray-500">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 leading-relaxed">
+                    Not at all. Many of the developers featured in our stories are self-taught or bootcamp graduates. What matters is your portfolio and ability to solve problems.
+                </div>
+            </details>
+            <details class="group bg-[#111] border border-white/5 rounded-xl overflow-hidden transition-all duration-300 open:border-blue-500/30">
+                <summary class="flex justify-between items-center p-6 cursor-pointer font-medium hover:text-blue-400 transition">
+                    Where should I start learning?
+                    <span class="transform group-open:rotate-180 transition text-gray-500">▼</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 leading-relaxed">
+                    Check out our <strong>Roadmaps</strong> page. For beginners, we recommend starting with HTML, CSS, and basic JavaScript before moving to frameworks like React.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 py-10 text-center text-gray-500 text-sm">
+        &copy; 2025 Insights. Built by Vincent Omoseebi.
+    </footer>
+</body>
+</html>

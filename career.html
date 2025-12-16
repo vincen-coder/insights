@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmaps | Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%230a0a0a%22 stroke=%22%23222%22 stroke-width=%224%22/><circle cx=%2250%22 cy=%2232%22 r=%2212%22 fill=%22%2322c55e%22/><rect x=%2238%22 y=%2252%22 width=%2224%22 height=%2232%22 rx=%226%22 fill=%22white%22/></svg>">
+</head>
+<body class="bg-[#050505] text-white">
+
+    <nav class="fixed top-0 w-full bg-[#050505]/80 backdrop-blur-md border-b border-white/5 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">Insights<span class="text-blue-500">.</span></a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="career.html" class="text-white">Roadmaps</a>
+                <a href="stories.html" class="px-4 py-2 rounded-full border border-white/10 hover:bg-white/5 hover:text-white transition">Stories</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32 pb-20">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-6">Choose Your Path</h1>
+            <p class="text-gray-400 mb-8">Click a role below to load the live roadmap.</p>
+            
+            <div class="flex flex-wrap justify-center gap-3" id="controls">
+                <button onclick="switchRoadmap('frontend')" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:scale-105 shadow-lg shadow-blue-500/20">Frontend</button>
+                <button onclick="switchRoadmap('backend')" class="px-6 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-gray-400 font-semibold hover:text-white hover:border-white/30 transition hover:scale-105">Backend</button>
+                <button onclick="switchRoadmap('devops')" class="px-6 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-gray-400 font-semibold hover:text-white hover:border-white/30 transition hover:scale-105">DevOps</button>
+                <button onclick="switchRoadmap('react')" class="px-6 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-gray-400 font-semibold hover:text-white hover:border-white/30 transition hover:scale-105">React</button>
+            </div>
+        </div>
+
+        <div class="relative w-full h-[800px] bg-[#111] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+            <iframe id="roadmap-frame" src="https://roadmap.sh/frontend/embed" class="w-full h-full border-0"></iframe>
+        </div>
+    </main>
+
+    <script>
+        function switchRoadmap(role) {
+            // 1. Find the iframe element
+            const frame = document.getElementById('roadmap-frame');
+            
+            // 2. Change its source URL to the new role
+            frame.src = `https://roadmap.sh/${role}/embed`;
+
+            // 3. Update button styles (Visual feedback)
+            const buttons = document.querySelectorAll('#controls button');
+            buttons.forEach(btn => {
+                if(btn.innerText.toLowerCase() === role) {
+                    btn.className = "px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:scale-105 shadow-lg shadow-blue-500/20";
+                } else {
+                    btn.className = "px-6 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-gray-400 font-semibold hover:text-white hover:border-white/30 transition hover:scale-105";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

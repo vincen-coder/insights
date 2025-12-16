@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Tech Giants | Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .aspect-video { aspect-ratio: 16 / 9; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%230a0a0a%22 stroke=%22%23222%22 stroke-width=%224%22/><circle cx=%2250%22 cy=%2232%22 r=%2212%22 fill=%22%2322c55e%22/><rect x=%2238%22 y=%2252%22 width=%2224%22 height=%2232%22 rx=%226%22 fill=%22white%22/></svg>">
+</head>
+<body class="bg-[#050505] text-white selection:bg-green-500 selection:text-black">
+
+    <nav class="fixed top-0 w-full bg-[#050505]/80 backdrop-blur-md border-b border-white/5 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight">Insights<span class="text-green-500">.</span></a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="career.html" class="hover:text-white transition">Roadmaps</a>
+                <a href="stories.html" class="text-white bg-white/10 px-4 py-2 rounded-full border border-white/5">Stories</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-10 px-6 text-center max-w-4xl mx-auto relative">
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[120px] -z-10"></div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            Journeys of <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">African Giants.</span>
+        </h1>
+        <p class="text-lg text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto">
+            Watch the interviews and read the stories of the engineers who put Nigeria on the global tech map.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-32">
+        
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold mb-8 border-l-4 border-green-500 pl-4"> Featured Interviews</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-[#111] rounded-2xl overflow-hidden border border-white/10 hover:border-green-500/50 transition group">
+                    <div class="relative aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/aIP9Zf-nnz8" title="Adora Nwodo Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Adora Nwodo: Software Engineering at Microsoft</h3>
+                        <p class="text-sm text-gray-400">She shares her journey from writing code at age 6 to building the Cloud/Metaverse at Microsoft.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#111] rounded-2xl overflow-hidden border border-white/10 hover:border-green-500/50 transition group">
+                    <div class="relative aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/S92fP-WbgHA" title="Prosper Otemuyiwa Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Prosper Otemuyiwa: The API Evangelist</h3>
+                        <p class="text-sm text-gray-400">How he became a Google Developer Expert and co-founded Eden Life after dominating the open-source space.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#111] rounded-2xl overflow-hidden border border-white/10 hover:border-green-500/50 transition group">
+                    <div class="relative aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/8F5VryzY9hU" title="Ire Aderinokun Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Ire Aderinokun: Frontend Mastery</h3>
+                        <p class="text-sm text-gray-400">Nigeria's first female Google Developer Expert shares how she switched from Psychology/Law to Frontend Engineering.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold mb-8 border-l-4 border-blue-500 pl-4"> Read Their Paths</h2>
+            <div id="stories-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-white/10 bg-[#0a0a0a] py-10 text-center text-gray-500 text-sm">
+        &copy; 2025 Insights. Curated for the next generation.
+    </footer>
+
+    <script>
+        // === THE PROFILE DATA ===
+        const developers = [
+            {
+                name: "Segun Adebayo",
+                role: "Creator, Chakra UI",
+                image: "https://avatars.githubusercontent.com/u/6916170?v=4", 
+                bio: "He built Chakra UI, a library used by millions globally. He proves that African devs don't just consume tech; they create it.",
+                link: "https://twitter.com/segunadebayo"
+            },
+            {
+                name: "Moyinoluwa Adeyemi",
+                role: "Android GDE",
+                image: "https://avatars.githubusercontent.com/u/5323259?v=4", 
+                bio: "Creator of 'Yoruba Watch Faces'. She is a Google Developer Expert for Android and a mentor to thousands.",
+                link: "https://twitter.com/moyheen"
+            },
+            {
+                name: "Obinna Ekwuno",
+                role: "Cloud Advocate",
+                image: "https://avatars.githubusercontent.com/u/18600107?v=4", 
+                bio: "A self-taught software engineer turned Cloud Advocate. He champions web accessibility on the global stage.",
+                link: "https://twitter.com/obinnaspeaks"
+            },
+            {
+                name: "Peace Ojemeh",
+                role: "Product Designer",
+                image: "https://avatars.githubusercontent.com/u/49657577?v=4", 
+                bio: "Known as 'Perrie'. She is pioneering the open-source design movement in Africa.",
+                link: "https://twitter.com/perriex_"
+            }
+        ];
+
+        // === RENDER PROFILES ===
+        const container = document.getElementById('stories-container');
+        
+        developers.forEach(dev => {
+            const html = `
+            <a href="${dev.link}" target="_blank" class="group bg-[#111] border border-white/5 rounded-xl p-5 hover:border-white/20 transition hover:-translate-y-1 block">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="${dev.image}" alt="${dev.name}" class="w-12 h-12 rounded-full border border-gray-700">
+                    <div>
+                        <h3 class="font-bold text-white text-sm group-hover:text-blue-400 transition">${dev.name}</h3>
+                        <p class="text-xs text-gray-500">${dev.role}</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    ${dev.bio}
+                </p>
+            </a>
+            `;
+            container.innerHTML += html;
+        });
+    </script>
+</body>
+</html>
